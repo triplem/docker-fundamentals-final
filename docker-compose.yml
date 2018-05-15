@@ -1,0 +1,10 @@
+version: '3'
+services:
+  database:
+    image: triplem/database:1.0
+  api:
+    image: triplem/api:1.0
+  ui:
+    image: triplem/ui:1.0
+    ports: 
+    - "3000:3000"
